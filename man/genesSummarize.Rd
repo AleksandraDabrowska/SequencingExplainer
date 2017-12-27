@@ -4,8 +4,17 @@
 \alias{genesSummarize}
 \title{genesSumarize}
 \usage{
-genesSummarize(bamDataFrame, geneData = TAIR10_genes, chromosome = NULL,
-  range = 0)
+genesSummarize(bamDataFrame, geneData = SequencingExplainer::TAIR10_genes,
+  chromosome = NULL, range = 0)
+}
+\arguments{
+\item{bamDataFrame}{data frame converted to R using \code{bamToR()} function}
+
+\item{geneData}{data frame with positions of all genes and their names}
+
+\item{chromosome}{optional, number of chromosome}
+
+\item{range}{how many nucleotide before \code{start} and after \code{stop} we include to genes}
 }
 \description{
 Function genesSumarize counts the coverage of each gene
