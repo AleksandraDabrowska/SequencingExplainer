@@ -12,6 +12,7 @@
 #'@importFrom dplyr between
 #'@export
 matchToGene <- function(positions, start, stop, geneName, range=0){
+  geneName <- geneName
   nrow <- length(geneName)
   counts <- as.data.frame(matrix(nrow=nrow,ncol=2))
   colnames(counts)<-c("count","name")

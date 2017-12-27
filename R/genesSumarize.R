@@ -13,7 +13,7 @@
 #'@export
 
 genesSummarize <- function(bamDataFrame, geneData=SequencingExplainer::TAIR10_genes, chromosome=NULL, range=0){
-  if(exists("chromosome")){
+  if(!is.null(chromosome)){
     geneData <- filter(geneData, V1==paste("Chr",chromosome))
   }
   geneData <- filter(geneData, V3=="gene")
