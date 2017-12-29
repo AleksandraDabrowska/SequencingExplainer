@@ -3,7 +3,7 @@
 #'@title genesSumarize
 #'
 #'@param bamDataFrame data frame converted to R using \code{bamToR()} function
-#'@param geneData data frame with positions of all genes and their names
+#'@param geneData data frame with positions of all genes and their names, by default we use a \code{TAIR10_genes}
 #'@param chromosome optional, number of chromosome
 #'@param range how many nucleotide before \code{start} and after \code{stop} we include to genes
 #'

@@ -10,7 +10,7 @@ genesSummarize(bamDataFrame, geneData = SequencingExplainer::TAIR10_genes,
 \arguments{
 \item{bamDataFrame}{data frame converted to R using \code{bamToR()} function}
 
-\item{geneData}{data frame with positions of all genes and their names}
+\item{geneData}{data frame with positions of all genes and their names, by default we use a \code{TAIR10_genes}}
 
 \item{chromosome}{optional, number of chromosome}
 
